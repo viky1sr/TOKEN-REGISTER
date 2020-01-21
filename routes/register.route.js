@@ -20,7 +20,7 @@ check('phone')
 check('password')
     .not()
     .isEmpty()
-    .isLength({ min: 8 }),
+    .isLength({ min: 6 }),
 check('password_confirmation')
     .not()
     .isEmpty(),

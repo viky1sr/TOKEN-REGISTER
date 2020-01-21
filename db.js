@@ -3,7 +3,9 @@ require('dotenv').config()
 const host = process.env.host
 
 mongoose.connect(host, {
-    'userNewUrlParser': true
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+
 })
 
 mongoose.set('useCreateIndex', true)
